@@ -12,13 +12,188 @@ code {
     monospace;
 }
 
-.App {
-  text-align: center;
+.masthead {
+  display: flex;
+  background-image: linear-gradient(
+    135deg,
+    rgba(23, 130, 116, 1) 0%,
+    rgba(33, 187, 167, 1) 68%,
+    rgba(177, 204, 203, 1) 100%
+  ) !important;
+  height: 50vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ui.segment {
+  border-top: none !important;
+}
+
+.ui.menu.masthead-menu > .ui.container {
+  padding-top: 1.428571em !important;
+}
+
+.ui.menu.masthead-menu a.item {
+  color: #f3f7f7;
+}
+
+.ui.menu.masthead-menu .header.item {
+  background: none !important;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0.429em;
+}
+
+.ui.menu.masthead-menu .header.item img {
+  width: 3.286em;
+}
+
+.ui.menu.masthead-menu .ui > .item:nth-child(2),
+.ui.menu.masthead-menu .ui > .item:nth-child(3) {
+  padding-left: 0.357em;
+  padding-right: 0.357em;
+  margin-right: 0.143em;
+  margin-left: 0.143em;
+}
+
+.ui.menu.masthead-menu .item > .selection {
+  width: 100%;
+}
+
+.masthead > .ui.container {
+  margin-top: 4.5em;
+}
+
+.masthead > .ui.container .ui.header:first-child {
+  /* font-size is 24px */
+  font-size: 4em;
+  font-weight: 400;
+  margin-top: 0.714em;
+  margin-bottom: 1.607em;
+}
+
+.masthead > .ui.container .ui.button {
+  background: #f3f7f7;
+  color: rgba(0, 0, 0, 0.7);
+  border-radius: 2.142857em;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card-layover {
+  height: 0px;
+  padding: 0px !important;
+}
+
+.card-layover .container {
+  margin-top: -2.142857rem;
+  background: rgba(255, 255, 255, 0.5);
+  height: 4.642857rem;
+  border-radius: 1.785714em;
+}
+
+.ui.segments.mastgroup {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-radius: 0px;
+  border: none;
+  /* border-bottom: 1px solid rgba(34, 36, 38, 0.15); */
+}
+
+.ui.segments.mastgroup .ui.segment:nth-child(3) > .container {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.ui.segments.mastgroup .ui.segment > .container,
+.ui.segment.footer {
+  padding-top: 2.857143em;
+  padding-bottom: 2.857143em;
+}
+
+.ui.segments.mastgroup > .segment:first-child {
+  border-radius: 0px !important;
+}
+
+.ui.services .container > .row .ui.header:first-child,
+.ui.recommendations .container > .row .ui.header:first-child {
+  margin-bottom: 0.714286em;
+}
+
+.ui.services .container > div:not(:first-child) .ui.header:first-child,
+.ui.recommendations .container > div:not(:first-child) .ui.header:first-child {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.ui.segment.footer {
+  border: none !important;
+  padding-bottom: 1.071429em;
+}
+
+.ui.segment.footer > .ui.container {
+  padding-top: 0.714286rem;
+  border-top: 1px solid rgba(34, 36, 38, 0.15);
+}
+
+.ui.segment.footer .column-1,
+.ui.segment.footer .column-2 {
+  display: flex !important;
+  justify-content: space-evenly;
+}
+
+.ui.segment.footer .column-1 > .ui.header {
+  margin-top: calc(2rem - 0.14285714em);
+  text-align: left;
+  width: 45%;
+}
+
+.ui.segment.footer .column-1 img {
+  width: 15%;
+  margin-top: 0px;
+}
+
+.ui.segment.footer .column-1 p {
+  width: 50%;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.857143rem;
+  text-align: left;
+}
+
+.ui.segment.footer .copyright {
+  color: rgba(0, 0, 0, 0.6);
+  padding-top: 2em;
+  padding-bottom: 0.071429em;
+}
+
+.ui.segment.footer table {
+  width: 50%;
+}
+
+.ui.segment.footer table thead th {
+  border-bottom: 0px;
+  color: rgba(33, 187, 167, 1);
+  padding-bottom: 0px;
+}
+
+.ui.segment.footer .ui.list {
+  font-size: 12px;
+  padding-top: 3px;
+}
+
+.ui.segment.footer .ui.list .item {
+  padding-bottom: 14px;
+}
+
+.ui.segment.footer .back-to-top .icons {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.ui.segment.footer .back-to-top .icons > .circle {
+  color: rgba(33, 187, 167, 1);
+  margin-right: 0px;
+}
+
+.ui.segment.footer .back-to-top .icons > .angle {
+  color: rgba(255, 255, 255, 1);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -38,15 +213,20 @@ code {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .masthead > .ui.container {
+    margin-top: 12em;
+  }
+
+  .masthead > .ui.container .ui.header {
   }
 }
