@@ -1,23 +1,29 @@
 import React from 'react'
 import './App.css';
-import { Button, Form, Grid, GridColumn, } from 'semantic-ui-react'
+import { Button, Form, Grid, GridColumn, Container } from 'semantic-ui-react'
 
 const Login = () => (
- <Grid centered>
-    <GridColumn style={{maxWidth: 550, marginTop: 20}}>
-    <Form class="ui big form">
-      <Form.Field>
-        <input fluid type="text" aria-label="username" placeholder='Username' required/>
-      </Form.Field>
-      <Form.Field>
-        <input fluid type="password" aria-label="password" placeholder='Password' required/>
-      </Form.Field>
-      <Button fluid color='teal' type='submit'>Log in</Button>
-   </Form>
-   
-    </GridColumn>
-    
-  </Grid>
-)
+    <Container class="ui massive input">
+      <Grid centered>
+        <GridColumn style={{maxWidth: 550, marginTop: 50}}>
+          <div >
+            <Form>
+              <Form.Field>
+                <input size="massive" type="text" aria-label="username" placeholder='Username' required/>
+              </Form.Field>
+              <br/>
+              <Form.Field>
+                <input type="password" aria-label="password" placeholder='Password' size="massive" required/>
+              </Form.Field>
+              <br/>
+              <Button fluid color='teal' type='submit' size="massive">Log in</Button>
+            </Form>
+          </div>
+      
+        </GridColumn>
+        
+      </Grid>
+    </Container>
+) 
 
 export default Login
