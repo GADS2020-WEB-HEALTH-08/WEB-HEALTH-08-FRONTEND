@@ -16,7 +16,7 @@ const NavBar = ({ setActiveNavItem, activeItem }) => {
       { key: 'rv', value: 'rv', text: 'Rivers' },
       { key: 'ab', value: 'ab', text: 'Abuja' },
       { key: 'cr', value: 'cr', text: 'Cross Rivers' },
-      { key: 'dl', value: 'dl', text: 'Delta' },
+      { key: 'dl', value: 'dl', text: 'Delta' }
     ]);
     return () => {
       // cleanup;
@@ -64,15 +64,15 @@ const NavBar = ({ setActiveNavItem, activeItem }) => {
 
 NavBar.propTypes = {
   setActiveNavItem: PropTypes.func,
-  activeItem: PropTypes.string,
+  activeItem: PropTypes.string
 };
 
 const mapStateToProps = (state) => ({
-  activeItem: state.common.activeNavItem,
+  activeItem: state.common.activeNavItem
 });
 
 const mapDispatchToProps = {
-  setActiveNavItem,
+  setActiveNavItem
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(NavBar);
