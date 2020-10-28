@@ -1,6 +1,6 @@
 ## Description
 
-Created Login and SignUp pages in response to issues #3 & #4.
+Created Login and SignUp pages in response to issue #3 & issue #4.
 
 Fixes # (issue #4 and issue #3)
 
