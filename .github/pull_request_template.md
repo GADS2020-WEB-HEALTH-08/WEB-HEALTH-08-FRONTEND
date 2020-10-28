@@ -2,14 +2,13 @@
 
 Created Login and SignUp pages in response to issues #3 & #4.
 
-Fixes # (issue #4 and #3)
+Fixes # (issue #4 and issue #3)
 
 ## Type of change
 
 Please delete options that are not relevant.
 
 - [ ] New feature (non-breaking change which adds functionality)
-- [ ] This change requires a documentation update
 
 ## How Has This Been Tested?
 
@@ -17,6 +16,7 @@ Please describe the tests that you ran to verify your changes. Provide instructi
 
 - [ ] Test A
 - [ ] Test B
+      I ran a personal test.
 
 ## Checklist:
 
