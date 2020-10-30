@@ -1,6 +1,7 @@
 ## Description
 
 Created Login and SignUp pages in response to issue #3 & issue #4.
+Removed inline styles.
 
 Fixes # (issue #4 and issue #3)
 

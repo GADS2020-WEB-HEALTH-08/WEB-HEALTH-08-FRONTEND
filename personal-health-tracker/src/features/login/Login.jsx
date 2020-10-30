@@ -4,7 +4,7 @@ import { Button, Container, Form, Grid, GridColumn } from 'semantic-ui-react';
 const Login = () => (
   <Container>
     <Grid centered>
-      <GridColumn style={{ maxWidth: 600, marginTop: 216 }}>
+      <GridColumn id='gridcolumn'>
         <Form class='ui huge form'>
           <Form.Field>
             <input
@@ -24,8 +24,8 @@ const Login = () => (
               required
             />
           </Form.Field>
-          <Button fluid color='teal' type='submit'>
-            Sign Up
+          <Button id='button' fluid type='submit'>
+            Login
           </Button>
         </Form>
       </GridColumn>
