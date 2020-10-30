@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Input, Menu, Select } from 'semantic-ui-react';
 import { connect } from 'react-redux';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { setActiveNavItem } from '../../app/redux/common/common.slice';
 
@@ -41,11 +41,15 @@ const NavBar = ({ setActiveNavItem, activeItem }) => {
             name='LOGIN'
             active={activeItem === 'login'}
             onClick={handleItemClick}
+            as={Link}
+            to='/Login'
           />
           <Menu.Item
             name='SIGNUP'
             active={activeItem === 'signup'}
             onClick={handleItemClick}
+            as={Link}
+            to='/SignUp'
           />
           <Menu.Item
             name='CONTACT US'

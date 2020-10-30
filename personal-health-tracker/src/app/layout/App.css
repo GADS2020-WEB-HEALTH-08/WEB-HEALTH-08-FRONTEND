@@ -230,3 +230,15 @@ code {
   .masthead > .ui.container .ui.header {
   }
 }
+
+#button {
+  background-color: #3df5dd;
+  color: #fff;
+  text-shadow: none;
+  background-image: none;
+}
+
+#gridcolumn {
+  max-width: 600px;
+  margin-top: 216px;
+}
